@@ -1,5 +1,6 @@
 body{
     background-color: #0D0A30;
+    overflow-x: hidden ;
 }
 
 .hero-container{
@@ -8,7 +9,7 @@ body{
     width: 80%;
     margin: 0 auto;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% 80%;
 }
 
 .navbar{
@@ -69,6 +70,7 @@ body{
     border-style: solid;
     border: 5px white;
     z-index: -1;
+    box-shadow: 2px 2px white;
 }
     
 .blue-hue{
@@ -83,21 +85,6 @@ body{
     z-index: -1;
 }
 
-.big_m{
-    color: rgba(30, 30, 30, 0.00);
-    font-family: Outfit;
-    font-size: 12vh;
-    font-weight: 700;
-    line-height: 110%;
-    letter-spacing: 0.025rem;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #DAC9C9;
-    background-color: none !important;
-    text-shadow: 0px 14px 10px rgba(0,0,0,0.2),
-                 0px 24px 2px rgba(0,0,0,0.25),
-                 0px 34px 30px rgba(0,0,0,0.25);e;
-}
-
 .heading{
     text-align: center;
     font-family: Outfit;
@@ -106,7 +93,7 @@ body{
     line-height: 110%;
     color: #DAC9C9;
     text-shadow: 0px 5px 0px #b2a98f,
-                0px 14px 10px rgba(0,0,0,0.2),
+                0px 10px 1px #5ED2C2,
                 0px 24px 2px rgba(0,0,0,0.25),
                 0px 34px 30px rgba(0,0,0,0.25);
 }
@@ -117,5 +104,166 @@ body{
     grid-column-end: -1;
     align-items: center;
     justify-content: center;
+}
+
+.purple-outline{
+    box-shadow: -2px -3px white;
+    position: absolute;
+    width: 110vh;
+    height: 75vh;
+    border-radius: 50%;
+    right: -50vh;
+    top: 55vh;
+    background-color: none;
+}
+
+.purple-hue{
+    position: absolute;
+    width: 110vh;
+    height: 75vh;
+    border-radius: 50%;
+    flex-shrink: 0;
+    right: -50vh;
+    top: 55vh;
+    background-color: #8A4EAF;
+    filter: blur(400px);
+    z-index: -1;
+}
+
+.tech-stack{
+    display: grid;
+    height: 40vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 2fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tsh{
+    display: flex;
+    color: #5ED2C2;
+    font-family: Outfit;
+    font-size: 5vh;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%; /* 2.2rem */
+    text-shadow: 0px 5px 0px #b2a98f,
+    0px 14px 10px rgba(0,0,0,0.2),
+    0px 24px 2px rgba(0,0,0,0.25),
+    0px 34px 30px rgba(0,0,0,0.25);
+    align-items: flex-end;
+}
+
+.teck-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 14vh;
+    margin: auto 0;
+    border-radius: 3vh;
+    background: rgba(21, 14, 104, 0.47);
+    box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.25) inset, 10px 4px 10px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.logo-img{
+    width: 10vh;
+    height: 10vh;
+    flex-shrink: 0;
+    mix-blend-mode: luminosity;
+}
+
+.js{
+    width: 20vh;
+}
+
+.fb{
+    width: 30vh;
+    height: 25vh;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 30vh 20vh 60vh;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.b{
+    display: flex;
+    grid-column: span 2;
+    justify-content: flex-end;
+}
+
+.sub-head{
+    color: #DAC9C8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    font-family: Outfit;
+    font-size: 8vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 4.4rem */
+}
+
+.hb{
+    top: 150vh;
+    left: -20vh;
+    box-shadow: 2px -3px white;
+}
+
+.my-image{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    border-radius: 25vh;
+    height: 60vh;
+    mix-blend-mode: luminosity;
+}
+
+.about-text{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: 3/1/4/2;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about-para{
+    color: #FFF;
+    font-family: outfit;
+    font-size: 2.5vh;
+    font-weight: 400;
+    line-height: 150%; /* 2.25rem */
+    margin-top: 20vh ;
+}
+
+.button{
+    border-radius: 5vh;
+    align-self: flex-start;
+    box-shadow: #DAC9C9 0px 1px 4px, #DAC9C9 0px 0px 0px 3px;
+    width: 30vh;
+    color: #DAC9C9;
+    transition: all 50ms ease-in-out;
+}
+
+.button-text{
+    text-align: center;
+    font-family: outfit;
+}
+
+.button:hover{
+    background-color: #DAC9C9;
+    color: #0D0A30;
+    box-shadow: 10px 10px 150px 5px #6BEFDD;
+    z-index: -1;
+
 }
 
